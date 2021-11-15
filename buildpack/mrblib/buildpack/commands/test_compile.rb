@@ -17,7 +17,7 @@ module Buildpack::Commands
     end
 
     def run
-      buildpacks = %w(heroku/nodejs-v98 heroku/ember-cli-deploy)
+      buildpacks = %w(heroku/nodejs heroku/ember-cli-deploy)
       mktmpdir("exports") do |dir|
         buildpacks.inject([]) do |exports, name|
           export      = BuildpackRunner.new(@output_io, @error_io, name).test_compile(@build_dir, @cache_dir, @env_dir, exports)

@@ -16,7 +16,7 @@ module Buildpack::Commands
     end
 
     def run
-      BuildpackRunner.new(@output_io, @error_io, "heroku/nodejs-v98").test(@build_dir, @env_dir)
+      BuildpackRunner.new(@output_io, @error_io, "heroku/nodejs").test(@build_dir, @env_dir)
     end
   end
 end
