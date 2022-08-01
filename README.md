@@ -1,5 +1,6 @@
 # heroku-buildpack-emberjs
-**NOTE**: This buildpack is an experimental OSS project demonstrating [Ember.js on Heroku](https://www.heroku.com/emberjs).
+
+This buildpack was an experimental OSS project demonstrating how to run Ember.js on Heroku. This buildpack has been deprecated and is no longer supported. For an alternative, consider using the [`heroku/nodejs` buildpack](https://github.com/heroku/heroku-buildpack-nodejs) with the [`heroku/nginx` buildpack](https://github.com/heroku/heroku-buildpack-nginx).
 
 ## Intro
 
